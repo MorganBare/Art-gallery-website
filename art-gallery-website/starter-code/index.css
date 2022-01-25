@@ -1,6 +1,8 @@
-.root {
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap');
+
+:root {
     /* colors */
-    --clr-brown: #d5966c;
+    --clr-brown: #D5966C;
     --clr-black: #151515;
     --clr-gray: #444;
     --clr-white: #fff;
@@ -47,6 +49,7 @@ h3,
 h4,
 h5,
 p,
+section,
 figure,
 picture {
     margin: 0; 
