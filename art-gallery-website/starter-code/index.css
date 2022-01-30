@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300;500&display=swap');
 
 :root {
     /* colors */
     --clr-brown: #D5966C;
     --clr-black: #151515;
-    --clr-gray: #444;
+    --clr-gray: 0 0% 26.67%;
     --clr-white: #fff;
 
     /* font-sizes */
@@ -62,15 +62,12 @@ h4,
 h5,
 h6,
 p {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 /* set up the body */
 body {
-    font-family: var(--ff-sans-normal);
-    font-size: var(--fs-400);
-    color: hsl( var(--clr-white) );
-    background-color: hsl( var(--clr-dark) );
+    font-family: var(--ff-bigSD);
     line-height: 1.5;
     min-height: 100vh;
 }
@@ -118,6 +115,10 @@ select {
     gap: var(--gap, 1rem);
 }
 
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+}
+
 .container {
     padding-inline: 2em;
     margin-inline: auto;
@@ -140,12 +141,13 @@ select {
 
 .bg-accent { background-color: var(--clr-brown);}
 .bg-dark { background-color: var(--clr-black);}
-.bg-gray { background-color: var((--clr-gray));}
+.bg-gray { background-color: hsl(var(--clr-gray) / 1);}
 .bg-white { background-color: var(--clr-white);}
 
 .text-dark { color: var(--clr-black);}
 .text-accent { color: var(--clr-brown);}
 .text-white { color: var(--clr-white);}
+.text-gray { color: hsl(var(--clr-gray) / 1);}
 
 /* typography */
 
@@ -164,4 +166,27 @@ select {
 .fs-700,
 .fs-600 {
     line-height: 1.1;
+}
+
+.fw-300 { font-weight: 300;}
+.fw-500 { font-weight: 500;}
+
+.headings {
+    color: hsl(var(--clr-gray) / .5);
+}
+
+.banner {
+    justify-content: space-between; 
+    padding: 3em 6em;
+}
+
+@media screen and (max-width:600px) {
+    .banner {
+        padding: 1.5em 2em;
+    }
+
+    .banner p{
+        line-height: 2 !important;
+        text-align: center;
+    }
 }
