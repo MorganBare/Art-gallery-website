@@ -191,6 +191,41 @@ select {
     padding: 3em 6em;
 }
 
+.btn-1,
+.btn-2 {
+    text-transform: uppercase;
+    color: var(--clr-white);
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing: 3.64px;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-1 {
+    padding-left: 1.5em;
+}
+
+.btn-2 {
+    padding-right: 1.5em;
+}
+
+.btn-1 img,
+.btn-2 img {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1em;
+    height: 100%;
+}
+
+.btn-1 img {
+    margin-left: 1.5em;
+}
+
+.btn-2 img {
+    margin-right: 1.5em;
+}
+
 @media screen and (max-width:600px) {
     .banner {
         padding: 1.5em 2em;
@@ -200,6 +235,12 @@ select {
         line-height: 2 !important;
         text-align: center;
     }
+
+    #btn-container {
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+
 }
 
 @media screen and (max-width:768px){
