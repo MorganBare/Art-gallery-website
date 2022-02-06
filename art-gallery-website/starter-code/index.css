@@ -11,6 +11,7 @@
     --fs-700: 6rem;
     --fs-600: 4.375rem;
     --fs-500: 3.75rem;
+    --fs-450: 3.125rem;
     --fs-400: 2.25rem;
     --fs-350: 1.5rem;
     --fs-300: 1.375rem;
@@ -128,6 +129,12 @@ select {
     max-width: 80rem;
 }
 
+.main-container {
+    padding-inline: 1em;
+    margin-inline: auto;
+    margin-top: 2.5em;
+}
+
 .sr-only {
     position: absolute; 
     width: 1px;
@@ -162,6 +169,7 @@ select {
 .fs-700 { font-size: var(--fs-700); }
 .fs-600 { font-size: var(--fs-600); }
 .fs-500 { font-size: var(--fs-500); }
+.fs-450 { font-size: var(--fs-450); }
 .fs-400 { font-size: var(--fs-400); }
 .fs-350 { font-size: var(--fs-350); }
 .fs-300 { font-size: var(--fs-300); }
@@ -186,9 +194,24 @@ select {
     font-weight: 900;
 }
 
+.main-headings {
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: .90;
+    padding-bottom: .5em;
+}
+
 .banner {
     justify-content: space-between; 
     padding: 3em 6em;
+}
+
+.p-text {
+    padding-bottom: 1.5em;
+}
+
+.hero-section {
+    padding-bottom: 6em;
 }
 
 .btn-1,
@@ -197,9 +220,10 @@ select {
     color: var(--clr-white);
     text-decoration: none;
     font-weight: 900;
-    letter-spacing: 3.64px;
+    letter-spacing: 3.65px;
     position: relative;
     display: inline-block;
+    font-size: var(--fs-200);
 }
 
 .btn-1 {
@@ -214,7 +238,7 @@ select {
 .btn-2 img {
     display: inline-block;
     vertical-align: middle;
-    padding: 1em;
+    padding: 1.35em 1.3em;
     height: 100%;
 }
 
