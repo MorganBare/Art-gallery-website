@@ -223,10 +223,51 @@ select {
     padding-top: 1.5em;
 }
 
+/* Hero Section */
+
 .hero-content {
     padding-top: 2em;
     max-width: 343px;
     margin: 0 auto;
+}
+
+/* This ensures the hero image always fills the width of the mobile screen sizes */
+.hero-image img {
+    width: 100%;
+}
+
+/* Tablet querie for the hero section */
+@media screen and (min-width:700px){
+    .hero-section{
+        display: grid;
+        grid-template-columns: 48% 5% 100%;
+        width: 100%;
+    }
+
+    .hero-image {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+
+    .hero-content {
+        grid-column: 2 / 4;
+        grid-row: 1;
+        justify-self: start;
+        align-self: center;
+        z-index: 1;
+        max-width: 355px;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .hero-content h1 {
+        font-size: var(--fs-600);
+        padding-bottom: .8em;
+    }
+
+    .hero-content p {
+        padding-bottom: 2.5em;
+    }
 }
 
 .galleryDay-text {
@@ -236,11 +277,6 @@ select {
 
 .bottom-grid-text {
     padding: 3em 1.75em;
-}
-
-/* This ensures the hero image always fills the width of the mobile screen sizes */
-.hero-image img {
-    width: 100%;
 }
 
 .location {
