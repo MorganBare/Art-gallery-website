@@ -130,9 +130,8 @@ select {
 }
 
 .main-container {
-    padding-inline: 1em;
     margin-inline: auto;
-    margin-top: 2.5em;
+    margin-top: 6em;
 }
 
 .sr-only {
@@ -204,6 +203,8 @@ select {
 .main-grid {
     justify-items: center;
     grid-template-columns: 100%;
+    max-width: 343px;
+    margin: 0 auto;
 }
 
 .banner {
@@ -215,8 +216,10 @@ select {
     padding-bottom: 1.5em;
 }
 
-.hero-section {
-    padding-bottom: 4em;
+.hero-content {
+    padding-top: 2em;
+    max-width: 343px;
+    margin: 0 auto;
 }
 
 .galleryDay-text {
@@ -228,6 +231,12 @@ select {
     padding: 3em 1.75em;
 }
 
+/* This ensures the hero image always fills the width of the mobile screen sizes */
+.hero-image img {
+    width: 100%;
+}
+
+/* Buttons */
 .btn-1,
 .btn-2 {
     text-transform: uppercase;
@@ -262,6 +271,16 @@ select {
 
 .btn-2 img {
     margin-right: 1.5em;
+}
+
+/* Media Queries Start */
+
+/* Gives a bit of padding on the sides for the tiny mobile screen sizes */
+@media screen and (max-width: 365px) {
+    .main-container,
+    .hero-content {
+        padding-inline: 1em;
+    }
 }
 
 @media screen and (max-width:600px) {
