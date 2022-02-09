@@ -201,6 +201,11 @@ select {
     padding-bottom: .5em;
 }
 
+.main-grid {
+    justify-items: center;
+    grid-template-columns: 100%;
+}
+
 .banner {
     justify-content: space-between; 
     padding: 3em 6em;
@@ -211,7 +216,16 @@ select {
 }
 
 .hero-section {
-    padding-bottom: 6em;
+    padding-bottom: 4em;
+}
+
+.galleryDay-text {
+    grid-row: 2 / 3;
+    padding: 1em 0;
+}
+
+.bottom-grid-text {
+    padding: 3em 1.75em;
 }
 
 .btn-1,
