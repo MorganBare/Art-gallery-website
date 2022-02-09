@@ -236,6 +236,15 @@ select {
     width: 100%;
 }
 
+footer {
+    padding: 3em 2em;
+    margin-top: 7em;
+}
+
+footer p {
+    padding: 2em 0;
+}
+
 /* Buttons */
 .btn-1,
 .btn-2 {
