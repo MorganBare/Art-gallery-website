@@ -13,6 +13,7 @@
     --fs-500: 3.75rem;
     --fs-450: 3.125rem;
     --fs-400: 2.25rem;
+    --fs-375: 2rem;
     --fs-350: 1.5rem;
     --fs-300: 1.375rem;
     --fs-200: 1.125rem;
@@ -132,6 +133,7 @@ select {
 .main-container {
     margin-inline: auto;
     margin-top: 6em;
+    margin-bottom: 7em;
 }
 
 .sr-only {
@@ -170,6 +172,7 @@ select {
 .fs-500 { font-size: var(--fs-500); }
 .fs-450 { font-size: var(--fs-450); }
 .fs-400 { font-size: var(--fs-400); }
+.fs-375 { font-size: var(--fs-375); }
 .fs-350 { font-size: var(--fs-350); }
 .fs-300 { font-size: var(--fs-300); }
 .fs-200 { font-size: var(--fs-200); }
@@ -216,6 +219,10 @@ select {
     padding-bottom: 1.5em;
 }
 
+.p-text-top {
+    padding-top: 1.5em;
+}
+
 .hero-content {
     padding-top: 2em;
     max-width: 343px;
@@ -236,13 +243,30 @@ select {
     width: 100%;
 }
 
+.location {
+    padding: 2em 1em 3em 1em;
+}
+
+.location-address {
+    padding-top: 2em;
+}
+
+.location-map {
+    background-image: url('assets/mobile/image-map.png');
+    background-size: cover;
+    height: 62vh;
+}
+
 footer {
     padding: 3em 2em;
-    margin-top: 7em;
 }
 
 footer p {
     padding: 2em 0;
+}
+
+.dark-icon{
+    filter: invert(100%) sepia(14%) saturate(412%) hue-rotate(42deg) brightness(77%) contrast(84%);
 }
 
 /* Buttons */
