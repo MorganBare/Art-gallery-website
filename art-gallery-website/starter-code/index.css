@@ -280,14 +280,17 @@ footer p {
     position: relative;
     display: inline-block;
     font-size: var(--fs-200);
+    transition: 0.3s;
 }
 
 .btn-1 {
     padding-left: 1.5em;
+    background-color: var(--clr-black);
 }
 
 .btn-2 {
     padding-right: 1.5em;
+    background-color: var(--clr-brown);
 }
 
 .btn-1 img,
@@ -296,14 +299,31 @@ footer p {
     vertical-align: middle;
     padding: 1.35em 1.3em;
     height: 100%;
+    transition: 0.3s;
 }
 
 .btn-1 img {
     margin-left: 1.5em;
+    background-color: var(--clr-brown);
 }
 
 .btn-2 img {
     margin-right: 1.5em;
+    background-color: var(--clr-black);
+}
+
+.btn-2:hover,
+.btn-2:focus,
+.btn-1:hover img,
+.btn-1:focus img{
+    background-color: var(--clr-black);
+}
+
+.btn-1:hover,
+.btn-1:focus,
+.btn-2:hover img,
+.btn-2:focus img{
+    background-color: var(--clr-brown);
 }
 
 /* Media Queries Start */
