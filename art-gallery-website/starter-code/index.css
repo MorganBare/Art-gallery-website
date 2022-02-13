@@ -341,14 +341,53 @@ select {
     padding: 2em 1em 3em 1em;
 }
 
+.location h1 {
+    line-height: normal;
+}
+
+@media screen and (min-width: 700px) {
+    .location {
+        display: flex;
+        padding: 4em 2.5em;
+        justify-content: space-between;
+    }
+
+    .location h1 {
+        width: 30%;
+        line-height: .9;
+    }
+}
+
 .location-address {
     padding-top: 2em;
+}
+
+@media screen and (min-width: 700px) {
+    .location-address {
+        width: 58%;
+        padding: 0;
+    }
+
+    .location-address p:nth-child(2){
+        padding: 1em 0;
+    }
 }
 
 .location-map {
     background-image: url('assets/mobile/image-map.png');
     background-size: cover;
     height: 62vh;
+}
+
+@media screen and (min-width: 700px) {
+    .location-map {
+        background-image: url('assets/tablet/image-map.png');
+        height: 68vh;
+    }
+
+    .location-map a {
+        margin-left: 3em;
+    }
 }
 
 footer {
@@ -370,7 +409,7 @@ footer p {
     }
 
     footer p {
-        width: 45%;
+        width: 40%;
         padding: 0;
     }
 
@@ -401,7 +440,7 @@ footer p {
 
 .btn-2 {
     padding-right: 1.5em;
-    background-color: var(--clr-brown);
+    background-color: var(--clr-black);
 }
 
 .btn-1 img,
@@ -420,7 +459,7 @@ footer p {
 
 .btn-2 img {
     margin-right: 1.5em;
-    background-color: var(--clr-black);
+    background-color: var(--clr-brown);
 }
 
 .btn-2:hover,
