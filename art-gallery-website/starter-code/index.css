@@ -221,18 +221,20 @@ select {
 
 @media screen and (min-width:700px){
     .main-grid {
-        max-width: 80%;
-        grid-template-columns: 50% 8% 50%;
+        max-width: 90%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr min-content 1fr;
     }
 
     .grid {
-        gap: .9rem;
+        gap: .5rem;
     }
 
     .galleryDay-text {
-        padding-right: 4.5em;
+        padding: 1.5em 4em 0 0;
         grid-column: 1/2;
         grid-row: 1/2;
+        width:289px;
     }
 
     .grid-item2{
@@ -242,6 +244,7 @@ select {
 
     .grid-item2 img {
         object-fit: cover;
+        height: 100%;
     }
 
     .grid-item3 {
@@ -251,12 +254,12 @@ select {
 
     .grid-item3 img {
         object-fit: cover;
+        height: 100%;
     }
 
     .grid-item4 {
         grid-column: 3/4;
         grid-row: 2/3;
-        justify-self: start;
     }
 
     .grid-item4 img {
@@ -266,6 +269,11 @@ select {
     .bottom-grid-text {
         grid-column: 3/4;
         grid-row: 3/4;
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em 1.75em;
     }
 }
 
