@@ -337,6 +337,39 @@ select {
     }
 }
 
+@media screen and (min-width:900px) {
+    .hero-section {
+        grid-template-columns: .5fr 1fr 2fr .3fr 1fr .3fr;
+    }
+
+    .hero-image {
+        grid-column: 3 / 5;
+        grid-row: 1;
+    }
+
+    .hero-content {
+        display: inherit;
+        grid-column: 2 / 6;
+        max-width: 100%;
+        grid-row: 1;
+        grid-template-columns: 1.1fr 1fr .8fr;
+        grid-template-rows: inherit;
+    }
+
+    .hero-content h1 {
+        font-size: var(--fs-700);
+    }
+
+    .hero-content-text {
+        grid-column: 3/-1;
+    }
+
+    .hero-content-text p {
+        font-size: var(--fs-300);
+    }
+        
+}
+
 .location {
     padding: 2em 1em 3em 1em;
 }
