@@ -366,12 +366,8 @@ select {
         grid-column: 2 / 6;
         grid-row: 1;
         max-width: 100%;
-        grid-template-columns: 1.5fr .5fr .9fr .25fr;
+        grid-template-columns: 1.5fr .5fr .95fr .2fr;
         grid-template-rows: 1fr .5fr;
-    }
-
-    .hero-content:first-child {
-        color:aqua;
     }
 
     .hero-content h1 {
@@ -467,6 +463,17 @@ footer p {
     .footer-icons img {
         height: 20px;
         width: 20px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    footer {
+        padding: 4em 7em;
+    }
+
+    footer p {
+        width: 30%;
+        padding: 0;
     }
 }
 
