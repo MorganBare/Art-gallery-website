@@ -463,6 +463,12 @@ select {
         
 }
 
+@media screen and (min-width: 1500px) {
+    .hero-content {
+        min-width: 95%;
+    }
+}
+
 .location {
     padding: 2em 1em 3em 1em;
 }
