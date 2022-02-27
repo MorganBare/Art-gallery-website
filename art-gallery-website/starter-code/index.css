@@ -567,8 +567,20 @@ footer p {
     padding: 2em 0;
 }
 
+
 .dark-icon{
     filter: invert(100%) sepia(14%) saturate(412%) hue-rotate(42deg) brightness(77%) contrast(84%);
+    transition: 0.2s;
+}
+
+.light-icon:focus,
+.light-icon:hover {
+    filter: brightness(0) saturate(100%) invert(78%) sepia(10%) saturate(2479%) hue-rotate(326deg) brightness(90%) contrast(84%);
+}
+
+.dark-icon:focus,
+.dark-icon:hover {
+    filter: none;
 }
 
 @media screen and (min-width:700px){
