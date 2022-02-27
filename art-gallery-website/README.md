@@ -15,7 +15,6 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 ## Overview
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Click Here](https://elegant-morse-5cd661.netlify.app)
 - Live Design Site URL: [Click Here](https://elegant-morse-5cd661.netlify.app/design-system.html)
 
