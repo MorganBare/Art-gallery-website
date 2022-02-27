@@ -390,7 +390,7 @@ select {
         grid-column: 2 / 6;
         grid-row: 1;
         max-width: 100%;
-        grid-template-columns: .8fr 1fr .1fr .9fr;
+        grid-template-columns: 1.5fr 1fr 1.7fr 2fr;
         grid-template-rows: 1fr .5fr;
         background: inherit;
     }
@@ -403,11 +403,12 @@ select {
     }
 
     .hero-content-text {
-        grid-column: 3/-1;
+        grid-column: 4/-1;
     }
 
     .hero-content-text p {
         font-size: var(--fs-300);
+        max-width: 350px;
     }
         
 }
